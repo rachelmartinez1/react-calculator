@@ -126,6 +126,7 @@ function formatOperand(operand) {
 }
 
 function App() {
+  // useReducer function reducer sending a type and a payload on dispatch
   const[{ currentOperand, previousOperand, operation }, dispatch] = useReducer(reducer, {})
 
   return (
